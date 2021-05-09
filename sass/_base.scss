@@ -5,4 +5,17 @@ $color-grey-light-2: #aaa;
 
 // FONT VARIABLES
 $font-heading: "Lato", sans-serif;
-$font-paragraph: "Roboto Slab", serif;
+$font-primary: "Roboto Slab", serif;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5 -> 1rem = 10px
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
