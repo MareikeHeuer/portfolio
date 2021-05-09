@@ -1,7 +1,8 @@
-@import "base";
-@import "typography";
+@import "base/base";
+@import "base/typography";
 
-@import "pages";
-@import "works";
-@import "header";
-@import "footer";
+@import "pages/index";
+@import "pages/works";
+
+@import "components/header";
+@import "components/footer";
