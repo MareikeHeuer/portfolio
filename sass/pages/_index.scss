@@ -6,22 +6,6 @@
   flex-direction: column;
 }
 
-.header__list {
-  display: flex;
-  justify-content: flex-end;
-
-  list-style: none;
-  padding-top: 1rem;
-
-  &--item {
-    font-family: $font-heading;
-    font-weight: 400;
-    font-size: 1.6rem;
-    text-decoration: none;
-    margin-right: 2rem;
-  }
-}
-
 .profile {
   display: flex;
   justify-content: center;
@@ -43,15 +27,5 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 3rem;
-  }
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-
-  &__content {
-    display: flex;
-    align-items: center;
   }
 }
