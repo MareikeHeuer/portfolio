@@ -1,7 +1,7 @@
 .main-container-index {
   width: 100vw;
   height: 100vh;
-  background-color: #73d4c9;
+  background-color: $color-primary;
   display: flex;
   flex-direction: column;
 }
@@ -27,5 +27,6 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 3rem;
+    width: 40rem;
   }
 }

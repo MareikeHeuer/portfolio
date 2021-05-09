@@ -4,12 +4,22 @@
 
   list-style: none;
   padding-top: 1rem;
+  padding-right: 7.5rem;
 
-  &--item {
+  &--item,
+  &--item--projects {
     font-family: $font-heading;
     font-weight: 400;
     font-size: 1.6rem;
     text-decoration: none;
     margin-right: 2rem;
+  }
+
+  &--item {
+    color: #000;
+  }
+
+  &--item--projects {
+    color: $color-primary-dark;
   }
 }

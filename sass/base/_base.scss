@@ -1,11 +1,19 @@
 // COLOR VARIABLES
 
+$color-primary: #73d4c9;
+$color-primary-dark: #3abbac;
+
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
 // FONT VARIABLES
 $font-heading: "Lato", sans-serif;
 $font-primary: "Roboto Slab", serif;
+
+// HELPER CLASSES
+.u-mb-small {
+  margin-bottom: 2rem;
+}
 
 *,
 *::before,

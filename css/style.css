@@ -1,3 +1,6 @@
+.u-mb-small {
+  margin-bottom: 2rem; }
+
 *,
 *::before,
 *::after {
@@ -16,7 +19,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden; }
 
-.heading-1 {
+.heading-1, .heading-2 {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
 
@@ -24,6 +27,15 @@ body {
   font-size: 4rem;
   color: black;
   line-height: 1; }
+
+.heading-2 {
+  font-size: 2.5rem;
+  color: black;
+  line-height: 1; }
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.5; }
 
 .main-container-index {
   width: 100vw;
@@ -47,11 +59,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3rem; }
+    padding-left: 3rem;
+    width: 40rem; }
 
 .main-container-projects {
   width: 100vw;
-  background-color: #73d4c9;
+  background-color: #fff;
   display: flex;
   flex-direction: column; }
 
@@ -62,12 +75,14 @@ body {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 5rem; }
+  .projects__paragraph {
+    font-size: 1.2rem; }
   .projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 2rem; }
     .projects__grid--item {
-      background-color: greenyellow;
+      background-color: #73d4c9;
       height: 22rem;
       padding: 1rem 2rem;
       display: flex;
@@ -77,19 +92,28 @@ body {
     .projects__grid--item-links {
       display: flex;
       flex-direction: column;
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: 1.2rem; }
+    .projects__grid--item-link {
+      font-weight: 400;
+      color: #0e2f2b; }
 
 .header__list {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  padding-top: 1rem; }
-  .header__list--item {
+  padding-top: 1rem;
+  padding-right: 7.5rem; }
+  .header__list--item, .header__list--item--projects {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     text-decoration: none;
     margin-right: 2rem; }
+  .header__list--item {
+    color: #000; }
+  .header__list--item--projects {
+    color: #3abbac; }
 
 .footer {
   display: flex;
