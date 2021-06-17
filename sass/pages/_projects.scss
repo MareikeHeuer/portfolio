@@ -7,7 +7,7 @@
 
 .projects {
   height: 100%;
-  padding: 5rem 9rem;
+  padding: 5rem 16rem;
 
   &__heading {
     text-align: center;
@@ -20,7 +20,7 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 2rem;
 
     &--item {
