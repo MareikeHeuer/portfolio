@@ -63,38 +63,60 @@ body {
     width: 40rem; }
 
 .main-container-projects {
+  height: 100vh;
   width: 100vw;
   background-color: #fff;
   display: flex;
   flex-direction: column; }
-
-.projects {
-  height: 100%;
-  padding: 5rem 16rem; }
-  .projects__heading {
-    text-align: center;
-    margin-bottom: 5rem; }
-  .projects__paragraph {
-    font-size: 1.2rem; }
-  .projects__grid {
-    display: grid;
-    grid-gap: 2rem; }
-    .projects__grid--item {
-      background-color: #73d4c9;
-      height: 22rem;
-      padding: 1rem 2rem;
+  .main-container-projects .card__item {
+    background-color: white;
+    display: flex;
+    margin: 10rem 30rem;
+    border-radius: 3rem;
+    box-shadow: 0 1.5rem 4rem black; }
+    @media screen and (max-width: 1200px) {
+      .main-container-projects .card__item {
+        display: flex;
+        flex-direction: column;
+        min-width: min-content; } }
+    .main-container-projects .card__item--links {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly; }
-    .projects__grid--item-links {
-      display: flex;
-      flex-direction: column;
       text-decoration: none;
-      font-size: 1.2rem; }
-    .projects__grid--item-link {
+      font-size: 1.2rem;
+      justify-content: space-evenly;
+      margin-top: 2rem; }
+    .main-container-projects .card__item--link {
       font-weight: 400;
-      color: #0e2f2b; }
+      text-decoration: none;
+      color: #fff;
+      background-color: #74d4c9;
+      border-radius: 1rem;
+      padding: 0.2rem 1rem; }
+  .main-container-projects .card__img {
+    position: relative;
+    background-size: cover; }
+    .main-container-projects .card__img img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 3rem 0rem 0rem 3rem;
+      border: 5px solid white; }
+      @media screen and (max-width: 1200px) {
+        .main-container-projects .card__img img {
+          border-radius: 3rem 3rem 0rem 0rem; } }
+  .main-container-projects .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px 35px 25px 35px; }
+  .main-container-projects .card__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: black;
+    line-height: 1; }
+  .main-container-projects .card__paragraph {
+    font-size: 1.2rem; }
 
 .header__list {
   display: flex;

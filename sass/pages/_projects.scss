@@ -1,49 +1,79 @@
+body {
+}
+
 .main-container-projects {
+  height: 100vh;
   width: 100vw;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-}
 
-.projects {
-  height: 100%;
-  padding: 5rem 16rem;
-
-  &__heading {
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-
-  &__paragraph {
-    font-size: 1.2rem;
-  }
-
-  &__grid {
-    display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-gap: 2rem;
-
-    &--item {
-      background-color: $color-primary;
-      height: 22rem;
-      padding: 1rem 2rem;
+  .card {
+    &__item {
+      background-color: white;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
+      margin: 10rem 30rem;
+      border-radius: 3rem;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 10);
+
+      @media screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        min-width: min-content;
+      }
+
+      &--links {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.2rem;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+      }
+
+      &--link {
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+        background-color: #74d4c9;
+        border-radius: 1rem;
+        padding: 0.2rem 1rem;
+      }
     }
 
-    &--item-links {
+    &__img {
+      position: relative;
+      background-size: cover;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 3rem 0rem 0rem 3rem;
+        border: 5px solid white;
+
+        @media screen and (max-width: 1200px) {
+          border-radius: 3rem 3rem 0rem 0rem;
+        }
+      }
+    }
+
+    &__content {
       display: flex;
       flex-direction: column;
-      text-decoration: none;
+      justify-content: space-around;
+      padding: 35px 35px 25px 35px;
+    }
+
+    &__heading {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      color: black;
+      line-height: 1;
+    }
+
+    &__paragraph {
       font-size: 1.2rem;
-    }
-
-    &--item-link {
-      font-weight: 400;
-      // text-decoration: none;
-      color: #0e2f2b;
     }
   }
 }
